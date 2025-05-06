@@ -1,0 +1,6 @@
+/index.html
+/pages/home.html
+/pages/services.html
+/pages/about.html
+/pages/contact.html
+/pages/404.html

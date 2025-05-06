@@ -1,0 +1,224 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.hero-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.hero-content {
+  z-index: 1;
+  position: relative;
+}
+.custom-card {
+  background-color: #65b6de;
+}
+
+footer {
+  background-color: #0D0438;
+  color: white;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .hero-content .display-4 {
+    font-size: 2rem;
+  }
+  .hero-content p.lead {
+    font-size: 1rem;
+  }
+  .navbar-nav {
+    flex-direction: column !important;
+    gap: 0.5rem;
+  }
+  .hero-content .btn {
+    width: 100%;
+  }
+  .col-lg-6 {
+    width: 100%;
+  }
+}
+
+.feature-card { border:none; border-radius:.5rem; transition:transform .3s; }
+.feature-card:hover { transform: translateY(-5px); }
+
+.custom-card {
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.custom-card img {
+  border-radius: 1rem;
+}
+.custom-card:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transform: scale(1.03);
+}
+.animated-section {
+  animation: fadeUp 1s ease-in-out both;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Soft blue for navbar and footer */
+.navbar, footer {
+  background-color: #2f4fa2 !important;
+}
+
+
+
+/* М'який колір для navbar */
+.navbar, footer {
+  background-color: #3f5b97 !important;
+}
+
+/* Градієнт для футера */
+footer {
+  background: linear-gradient(to right, #3f5b97, #2b3e8b) !important;
+}
+
+/* Футер (якщо потрібно) */
+footer {
+  background-color: #0D0438;  /* Той самий колір */
+  color: white;
+  padding: 2rem 0;
+}
+
+/* Стилі для банера */
+.banner {
+  background-color: #0D0438;  /* Колір банера */
+  color: white;
+  padding: 3rem 1.5rem;
+  border-radius: 10px;
+}
+
+.banner .btn {
+  background-color: #f47321;  /* Колір кнопки */
+  border-color: #f47321;
+}
+
+.banner .btn:hover {
+  background-color: #d65e1a;
+  border-color: #d65e1a;
+}
+
+/* Стилі для відео */
+.video-wrapper iframe {
+  border-radius: 10px;
+}
+
+/* Кнопка */
+.btn-primary {
+  background-color: #0D0438;  /* Колір футера */
+  border-color: #0D0438;
+}
+
+.btn-primary:hover {
+  background-color: #f47321;  /* Трохи світліший відтінок для ефекту наведеного курсору */
+  border-color: #f47321;
+}
+
+/* Заголовки */
+h2, .card-title {
+  color: #0D0438; /* Колір заголовків */
+}
+
+.video-wrapper iframe {
+  border-radius: 10px;
+}
+
+/* Картка з ефектами */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05); /* Збільшення картки при hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Додавання тіні */
+}
+
+/* Кнопка по центру */
+.card-body .text-center {
+  margin-top: auto; /* Центрує кнопку внизу картки */
+}
+
+/* Банер */
+.banner {
+  background-color: #0D0438;  /* Колір банера */
+  color: white;
+  padding: 3rem 1.5rem;
+  border-radius: 10px;
+}
+
+.banner .btn {
+  background-color: #f47321;  /* Колір кнопки */
+  border-color: #f47321;
+}
+
+.banner .btn:hover {
+  background-color: #d65e1a;
+  border-color: #d65e1a;
+}
+
+/* Стилі для відео */
+.video-wrapper iframe {
+  border-radius: 10px;
+}
+
+/* Стилі для банера */
+.banner-custom {
+  background-color: #1a1a58; /* Той самий темний колір */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.banner-custom h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.banner-custom p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.banner-custom .bi {
+  font-size: 3rem;
+}
+
+.banner-custom .text-warning {
+  color: #f47321; /* Колір для зірок */
+}
+
+.banner-custom .text-white {
+  color: white;
+}
+
